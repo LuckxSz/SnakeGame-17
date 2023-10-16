@@ -33,16 +33,16 @@ const handleGamerOver = () => {
 // change velocity based on kpress
 
 const changeDirection = (e) => {
-  if (e.key === "w" && velocityY != 1) {
+  if (e.key === "ArrowUp" && velocityY != 1) {
     velocityX = 0;
     velocityY = -1;
-  } else if (e.key === "s" && velocityY != -1) {
+  } else if (e.key === "ArrowDown" && velocityY != -1) {
     velocityX = 0;
     velocityY = 1;
-  } else if (e.key === "a" && velocityX != 1) {
+  } else if (e.key === "ArrowLeft" && velocityX != 1) {
     velocityX = -1;
     velocityY = 0;
-  } else if (e.key === "d" && velocityX != -1) {
+  } else if (e.key === "ArrowRight" && velocityX != -1) {
     velocityX = 1;
     velocityY = 0;
   }
